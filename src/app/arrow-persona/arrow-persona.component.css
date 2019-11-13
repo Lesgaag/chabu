@@ -1,28 +1,66 @@
-#chevron {
-    position: relative;
-    text-align: center;
-    padding: 12px;
-    margin-bottom: 6px;
-    height: 60px;
-    width: 200px;
-  }
-  #chevron:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 51%;
-    background: #7DB6A1;
-    transform: skew(0deg, 6deg);
-  }
-  #chevron:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    background: #FADBD8;
-    transform: skew(0deg, -6deg);
-  }
+.arrow {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 60px;
+  width: 90%;
+}
+
+.arrow:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  border-radius: 7px;
+  background:#7DB6A1;
+  -webkit-transform: skew(0deg, 6deg);
+  -moz-transform: skew(0deg, 6deg);
+  -ms-transform: skew(0deg, 6deg);
+  -o-transform: skew(0deg, 6deg);
+  transform: skew(0deg, 6deg, transparant);
+  z-index:-1;
+}
+
+.arrow:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 51%;
+  border-radius: 5px;
+  background: #7DB6A1;
+  -webkit-transform: skew(0deg, -6deg);
+  -moz-transform: skew(0deg, -6deg);
+  -ms-transform: skew(0deg, -6deg);
+  -o-transform: skew(0deg, -6deg);
+  transform: skew(0deg, -6deg);
+  z-index:-1;
+}
+
+/* Paragraph in Arrow */
+.arrow p {
+  color: white;
+  font-family: Georgia, serif;
+}
+
+/* Arrow when hovered */
+.arrow.hovered {
+  margin-top: -15px;
+  display: none;
+  cursor: pointer;
+  height: 115px;
+  width: 90%;
+}
+
+.arrow.hovered:hover {
+  display: block;
+}
+
+.arrow:hover + .arrow.hovered {
+  display: block;
+}
