@@ -3,7 +3,7 @@
   position: relative;
   text-align: center;
   padding: 12px;
-  margin-bottom: 6px;
+  margin-bottom: 15px;
   height: 60px;
   width: 90%;
 }
@@ -14,7 +14,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 50%;
+  width: 51%;
   border-radius: 7px;
   background:#7DB6A1;
   -webkit-transform: skew(0deg, 6deg);
@@ -50,11 +50,17 @@
 
 /* Arrow when hovered */
 .arrow.hovered {
-  margin-top: -15px;
+  margin-top: -18px;
   display: none;
   cursor: pointer;
-  height: 115px;
   width: 90%;
+  height: 115px;
+
+  /* scroll-animation when arrow dropdown appears */
+  -webkit-animation-name: scrollingDown; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: scrollingDown;
+  animation-duration: 0.5s;
 }
 
 .arrow.hovered:hover {
@@ -63,4 +69,10 @@
 
 .arrow:hover + .arrow.hovered {
   display: block;
+}
+
+/* The animation */
+@keyframes scrollingDown {
+  0%   {height: 0px;}
+  100% {height: 115px;}
 }
