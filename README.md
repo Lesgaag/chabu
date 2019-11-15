@@ -1,6 +1,9 @@
 # ChabuApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
+It was created to practice HTML/CSS, JavaScript, TypeScript within the Angular framework.
+
+Chabu stands for Character Builder, which makes you set up characters and display them within the web application.
 
 ## Development server
 
