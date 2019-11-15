@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { QuestionaireComponent } from './questionaire/questionaire.component';
 import { DetailPersonaComponent } from './detail-persona/detail-persona.component';
 import { ArrowPersonaComponent } from './arrow-persona/arrow-persona.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuestionaireComponent,
     DetailPersonaComponent,
-    ArrowPersonaComponent
+    ArrowPersonaComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
