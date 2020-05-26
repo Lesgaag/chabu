@@ -1,4 +1,6 @@
 <!-- generate arrow-component -->
+
+<!-- add ng-click oid to make div clickable -->
 <div class="arrow-container">
     <!-- Not hovered state -->
     <div class="arrow">
@@ -11,8 +13,9 @@
     <div class="arrow hovered">
         <div class="arrow-hovered-content">
             <p>Arrow hovered<p>
-            <p>Extra info<p>
-            <button class="arrow-button">more information</button>
+            <button class="btnPrimary" id="">
+                <a routerLink="/detail-component" routerLinkActive="active">Naar detail pagina</a>
+            </button>
         </div>  
     </div>
 </div>
