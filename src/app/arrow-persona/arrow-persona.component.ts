@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./arrow-persona.component.css']
 })
 export class ArrowPersonaComponent implements OnInit {
+  val = '';
+  firstName = 'Leslie';
+  lastName = 'van der Gaag';
+  sign = 'vissen';
+  age = '30';
 
   constructor() { }
 
