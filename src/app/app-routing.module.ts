@@ -6,10 +6,11 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { QuestionaireComponent } from './questionaire/questionaire.component';
 
 const routes: Routes = [
-  { path: 'main-component', component: MainPageComponent },
+  { path: 'home', component: MainPageComponent },
   { path: 'arrow-component', component: ArrowPersonaComponent },
   { path: 'detail-component', component: DetailPersonaComponent },
   { path: 'question-component', component: QuestionaireComponent },
+  { path: '**', component: MainPageComponent, } // todo: add a Page-not-found component
 ];
 
 @NgModule({
