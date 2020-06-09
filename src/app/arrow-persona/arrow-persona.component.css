@@ -48,10 +48,6 @@
   margin: 0px;
 }
 
-.arrow h1 {
-  margin: 0px;
-}
-
 /* Arrow when hovered */
 .arrow.hovered {
   margin-top: -25px;
