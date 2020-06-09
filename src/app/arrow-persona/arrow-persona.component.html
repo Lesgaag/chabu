@@ -4,16 +4,15 @@
 <div class="arrow-container">
     <!-- Not hovered state -->
     <div class="arrow">
-        <h1>{{firstName}}</h1>
-        <p>{{lastName}}</p>
-        <p>{{sign}}</p>
+        <h1>{{movieTitle}} <i>({{yearOfTheatre}})</i></h1>
+        <p>{{directorName}}</p>
     </div>
     <!-- Hovered state -->
     <div class="arrow hovered">
         <div class="arrow-hovered-content">
-            <p>{{age}} jaar oud<p>
+            <p>{{summary}}<p>
             <button class="btnPrimary" id="">
-                <a routerLink="/detail-component" routerLinkActive="active">Naar detail pagina</a>
+                <a routerLink="/question-component" routerLinkActive="active">Do Quiz</a>
             </button>
         </div>  
     </div>

@@ -6,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./arrow-persona.component.css']
 })
 export class ArrowPersonaComponent implements OnInit {
+
+  // add this data to a json file
   val = '';
-  firstName = 'Leslie';
-  lastName = 'van der Gaag';
-  sign = 'vissen';
-  age = '30';
+  movieTitle = 'The Lost World: Jurassic Park';
+  directorName = 'Steven Spielberg';
+  yearOfTheatre = '1997';
+  summary = 'The summary of the specific movie';
 
   constructor() { }
 
